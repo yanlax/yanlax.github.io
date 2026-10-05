@@ -2,60 +2,216 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Максим Низамов, UI/UX дизайн и разработка</title>
-<meta name="description" content="Максим Низамов, Челябинск. UI/UX дизайн и разработка сайтов и приложений: Figma, фронтенд, бэкенд, хостинг и домен. Принимаю заказы и рассматриваю вакансии.">
-<link rel="preload" href="fonts/unbounded-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<meta name="description" content="UI/UX дизайн и разработка сайтов и приложений. Челябинск, работаю удалённо.">
 <link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <a class="me" href="#">Максим Низамов</a>
-    <nav>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="#top" class="logo"><span class="logo__mark">МН</span><span>Максим Низамов</span></a>
+    <nav class="nav">
       <a href="#works">Работы</a>
       <a href="#offer">Заказы</a>
       <a href="#about">Обо мне</a>
       <a href="#contact">Контакты</a>
+      <a href="#contact" class="nav__cta">Написать</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <section class="hero">
-    <div>
-      <h1>UI/UX дизайн и разработка сайтов и приложений</h1>
-      <p class="lead">Меня зовут Максим, я из Челябинска. Рисую интерфейсы и макеты в Figma, верстаю, пишу фронтенд и бэкенд. Если нужно, настраиваю хостинг и домен, чтобы заказчик получил готовый продукт.</p>
-      <div class="cta">
-        <a class="btn main" href="#contact">Написать мне</a>
-        <a class="btn" href="#works">Смотреть работы</a>
+<main>
+
+<!-- HERO -->
+<section id="top" class="hero">
+  <div class="container">
+    <div class="hero__top">
+      <span class="mono">UI/UX + Фронтенд + Бэкенд + Хостинг</span>
+      <span class="status"><span class="status__dot"></span>Открыт к заказам и вакансиям</span>
+    </div>
+    <h1 class="h-xl">UI/UX дизайн и разработка сайтов и приложений</h1>
+    <div class="hero__row">
+      <p class="hero__lead">Меня зовут Максим, я из Челябинска. Рисую интерфейсы и макеты в Figma, верстаю, пишу фронтенд и бэкенд. Если нужно, настраиваю хостинг и домен, чтобы заказчик получил готовый продукт.</p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--light">Написать мне</a>
+        <a href="#works" class="btn btn--outline">Смотреть работы</a>
       </div>
-      <p class="status"><span class="dot"></span>Открыт к заказам и вакансиям</p>
     </div>
-    <div class="collage" aria-label="Примеры работ">
-      <a class="frame c1" href="#works"><img src="img/etp-glavnaya.webp" width="1400" height="630" alt="Сайт электронной торговой площадки Спецтендер"></a>
-      <a class="frame c2" href="#works"><img src="img/zayavki-forma.webp" width="1360" height="860" alt="Сайт заявок на ремонт"></a>
-      <a class="frame c3" href="#works"><img src="img/diagnostika-obzor.webp" width="1120" height="764" alt="Программа диагностики ноутбуков"></a>
+    <div class="stats">
+      <div class="stat">
+        <span class="mono muted">[ Опыт ]</span>
+        <div><div class="stat__num">с 2025</div><div class="stat__txt">фриланс, СпецТендер, Echips</div></div>
+      </div>
+      <div class="stat">
+        <span class="mono muted">[ Проекты ]</span>
+        <div><div class="stat__num">5</div><div class="stat__txt">инструментов для сервисного центра</div></div>
+      </div>
+      <div class="stat stat--accent">
+        <span class="mono">[ Под ключ ]</span>
+        <div class="stat__big">От макета в Figma до сайта на вашем домене</div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="path" aria-label="Опыт">
-    <h2 class="sec">Опыт в дизайне и разработке</h2>
-    <ol>
-      <li>
-        <div class="when">с января 2025</div>
-        <div><h3>Фриланс, UI/UX дизайн и веб-разработка</h3>
-          <p>Работаю удалённо, на заказ.</p>
+<!-- РАБОТЫ: ECHIPS -->
+<section id="works" class="section section--light">
+  <div class="container">
+    <span class="tag">Работы</span>
+    <div class="section-head works-head">
+      <h2 class="h-l">Что я сделал для сервисного центра</h2>
+      <p>Это рабочие инструменты Echips. Данные клиентов на скриншотах вымышленные.</p>
+    </div>
+
+    <article class="case case--feature">
+      <!-- замените на <img src="img/requests.png" alt="Веб-сервис приёма заявок"> -->
+      <div class="ph"><img src="img/zayavki-forma.webp" alt="Форма приёма заявок на ремонт" loading="lazy"></div>
+      <div class="case__body">
+        <div>
+          <span class="mono">[ 01 / Веб-сервис ]</span>
+          <h3>Веб-сервис приёма заявок на ремонт</h3>
+          <p class="case__lead">Клиент оставляет заявку онлайн, а потом сам смотрит, на каком этапе его устройство.</p>
+          <p class="case__text">Адаптивная форма с валидацией полей, личный кабинет клиента, страница статуса по номеру заявки или телефону и админ-панель для сотрудников.</p>
+        </div>
+        <div class="chips"><span>UI/UX дизайн</span><span>Фронтенд</span><span>Бэкенд</span><span>Хостинг и домен</span></div>
+      </div>
+    </article>
+
+    <div class="grid-2">
+      <article class="case">
+      <div class="ph"><img src="img/diagnostika-obzor.webp" alt="Главный экран программы диагностики" loading="lazy"></div>
+        <div class="case__body">
+          <span class="mono">[ 02 / Desktop ]</span>
+          <h3>Десктопное приложение для диагностики ноутбуков</h3>
+          <p class="case__lead">Инженер проходит проверки по сценарию, приложение собирает данные и формирует отчёт.</p>
+          <p class="case__text">Приложение для Windows проверяет батарею, диск, клавиатуру, матрицу, тачпад и датчики, а также создаёт нагрузку, чтобы поймать перегрев. Результаты собираются в отчёт, который экспортируется в PDF, Excel или TXT. Я сделал приложение целиком: UI/UX дизайн, фронтенд и бэкенд.</p>
+          <div class="chips"><span>UI/UX дизайн</span><span>Фронтенд</span><span>Бэкенд</span></div>
+        </div>
+      </article>
+      <article class="case">
+      <div class="ph"><img src="img/drivery-model.webp" alt="Выбор модели в приложении установки драйверов" loading="lazy"></div>
+        <div class="case__body">
+          <span class="mono">[ 03 / Desktop ]</span>
+          <h3>Приложение для установки драйверов</h3>
+          <p class="case__lead">Приложение само определяет модель ноутбука и устанавливает нужные драйверы.</p>
+          <p class="case__text">Раньше инженер искал драйверы вручную для каждой модели. Теперь это пошаговый сценарий: определение модели, подтверждение, загрузка и установка с индикацией прогресса. Я сделал приложение целиком: UI/UX дизайн, фронтенд и бэкенд.</p>
+          <div class="chips"><span>UI/UX дизайн</span><span>Фронтенд</span><span>Бэкенд</span></div>
+        </div>
+      </article>
+      <article class="case case--light">
+      <div class="ph"><img src="img/sait-glavnaya.webp" alt="Макет главной страницы сайта Echips" loading="lazy"></div>
+        <div class="case__body">
+          <span class="mono">[ 04 / Редизайн ]</span>
+          <h3>Новый дизайн сайта echips.ru</h3>
+          <p class="case__lead">UI-макеты главной страницы и страниц услуг.</p>
+          <p class="case__text">Я выполнил дизайн целиком и передал макеты. На основной сайт редизайн пока не перенесли, поэтому это показ макетов, а не живой сайт.</p>
+          <div class="chips"><span>UI/UX дизайн</span><span>Вёрстка</span></div>
+        </div>
+      </article>
+      <article class="case case--light">
+      <div class="ph"><img src="img/portal-glavnaya.webp" alt="Макет главной страницы портала" loading="lazy"></div>
+        <div class="case__body">
+          <span class="mono">[ 05 / Портал ]</span>
+          <h3>Портал с базой знаний</h3>
+          <p class="case__lead">Инструкции для инженеров и скачивание программ в одном месте.</p>
+          <p class="case__text">Я нарисовал макет портала: вход, главная, статьи базы знаний и каталог программ. Идея в том, чтобы вопросы к поддержке решались поиском по базе знаний, а не звонком.</p>
+          <div class="chips"><span>UI/UX дизайн</span><span>Вёрстка</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- САЙТЫ ДЛЯ ЗАКАЗЧИКОВ -->
+<section class="sites section--light section--border">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="h-m">Сайты для других заказчиков</h2>
+      <span class="mono">[ Дизайн сайтов ]</span>
+    </div>
+    <div class="grid-3">
+      <div class="site-card">
+        <span class="ph"><img src="img/micro-kalkulyatory.webp" alt="Раздел калькуляторов сервиса микросервисов" loading="lazy"></span>
+        <span class="site-card__body">
+          <span class="site-card__meta mono"><span>UI/UX дизайн</span></span>
+          <span class="site-card__title">Сервис «Микросервисы» для специалистов по закупкам</span>
+          <span class="site-card__text">Инструменты специалиста по закупкам в одном кабинете: расчёты, документы, сроки и проверки. Я делал UI/UX дизайн страниц всех микросервисов: калькуляторы, генерация штампа, проверка поставщика, чек-листы, волшебная таблица и шаблоны.</span>
+        </span>
+      </div>
+      <div class="site-card">
+        <span class="ph"><img src="img/etp-card.webp" alt="Главная страница площадки Спецтендер" loading="lazy"></span>
+        <span class="site-card__body">
+          <span class="site-card__meta mono"><span>UI/UX дизайн</span></span>
+          <span class="site-card__title">Электронная торговая площадка «Спецтендер»</span>
+          <span class="site-card__text">Сайт площадки для закупок по 223-ФЗ, 44-ФЗ и коммерческих закупок. Я делал UI/UX дизайн сайта. На скриншоте главная страница для заказчиков и участников торгов.</span>
+        </span>
+      </div>
+      <div class="site-card">
+        <span class="ph"><img src="img/dent-glavnaya.webp" alt="Главная страница сайта Дент-АС" loading="lazy"></span>
+        <span class="site-card__body">
+          <span class="site-card__meta mono"><span>UI/UX дизайн</span></span>
+          <span class="site-card__title">Сайт стоматологии «Дент-АС»</span>
+          <span class="site-card__text">Услуги и цены, запись на приём и контакты клиники. Я делал UI/UX дизайн сайта частной стоматологии.</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- УСЛУГИ -->
+<section id="offer" class="section section--border offer">
+  <div class="offer__bg" aria-hidden="true">ЗАКАЗЫ</div>
+  <div class="container">
+    <div class="section-head">
+      <h2 class="h-l">Что могу сделать для вас</h2>
+      <p>Работаю удалённо, показываю промежуточный результат, чтобы вы видели, что получается.</p>
+    </div>
+    <div class="grid-4">
+      <div class="service">
+        <span class="mono">[ 01 ]</span>
+        <div><div class="service__title">Сайт под ключ</div><div class="service__text">UI/UX дизайн, адаптивная вёрстка, фронтенд и бэкенд, хостинг и домен. Вы получаете работающий сайт по своему адресу.</div></div>
+      </div>
+      <div class="service">
+        <span class="mono">[ 02 ]</span>
+        <div><div class="service__title">UI/UX дизайн</div><div class="service__text">Сайты и приложения для компьютера и телефона. Макеты в Figma, готовые к передаче в разработку.</div></div>
+      </div>
+      <div class="service">
+        <span class="mono">[ 03 ]</span>
+        <div><div class="service__title">Веб-разработка</div><div class="service__text">Фронтенд и бэкенд сайтов и веб-сервисов: формы, личные кабинеты, админ-панели.</div></div>
+      </div>
+      <div class="service">
+        <span class="mono">[ 04 ]</span>
+        <div><div class="service__title">Десктопные приложения</div><div class="service__text">Небольшие инструменты под вашу задачу, как диагностика и установка драйверов выше.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ОПЫТ -->
+<section class="section section--border">
+  <div class="container">
+    <h2 class="h-l exp-title">Опыт в дизайне и разработке</h2>
+    <div>
+      <div class="exp">
+        <div class="exp__side"><span class="mono">[ 01 ] С ЯНВАРЯ 2025</span><span class="exp__badge">FREELANCE</span></div>
+        <div class="exp__main">
+          <h3>Фриланс, UI/UX дизайн и веб-разработка</h3>
+          <p class="exp__sub">Работаю удалённо, на заказ.</p>
           <ul>
             <li>UI/UX дизайн сайтов и интерфейсов приложений для компьютеров и телефонов.</li>
             <li>Сайты под ключ: дизайн, адаптивная вёрстка, фронтенд и бэкенд, хостинг и домен.</li>
           </ul>
         </div>
-      </li>
-      <li>
-        <div class="when">с июня по ноябрь 2025</div>
-        <div><h3>СпецТендер, веб-дизайнер</h3>
-          <p>Электронная торговая площадка.</p>
-          <ul>
+      </div>
+      <div class="exp">
+        <div class="exp__side"><span class="mono">[ 02 ] С ИЮНЯ ПО НОЯБРЬ 2025</span><span class="exp__badge">СПЕЦТЕНДЕР</span></div>
+        <div class="exp__main">
+          <h3>СпецТендер, веб-дизайнер</h3>
+          <p class="exp__sub">Электронная торговая площадка.</p>
+          <ul class="exp__cols-list">
             <li>Рисовал интерфейсы (UI) сайтов, порталов и дополнительных сервисов площадки в Figma, включая сервис микросервисов.</li>
             <li>Делал прототипы (low- и high-fidelity) и интерактивные макеты, чтобы согласовать решения с продуктовой командой и разработчиками.</li>
             <li>Проектировал пользовательские сценарии (UX): разбирал задачи пользователей.</li>
@@ -66,204 +222,102 @@
             <li>Поддерживал и развивал дизайн-систему и библиотеку компонентов, описывал правила использования UI.</li>
           </ul>
         </div>
-      </li>
-      <li>
-        <div class="when">с декабря 2025 по сентябрь 2026</div>
-        <div><h3>Echips, приложения и дизайн для сервисного центра</h3>
-          <h4>Приложения</h4>
-          <ul>
-            <li>Установщики драйверов для каждой модели, около 30 ноутбуков и моноблоков: запускаешь, жмёшь «Далее», остальное ставится само. Сделал целиком.</li>
-            <li>Общее приложение, которое само определяет модель и ставит нужный пакет драйверов.</li>
-            <li>Десктопное приложение для диагностики, сделал целиком: UI/UX дизайн, фронтенд и бэкенд. Автоматический прогон проверок, вход по пользователям, отчёты. Ей пользовались подключённые сервисные центры.</li>
-            <li>Веб-сервис приёма заявок: клиент сканирует QR при приёмке и заполняет форму, менеджеры меняют статусы в кабинете, а клиент сам видит статус ремонта.</li>
-          </ul>
-          <h4>Дизайн</h4>
-          <ul>
-            <li>UI/UX дизайн всех этих приложений и веб-сервиса заявок: экраны, состояния, адаптивные страницы.</li>
-            <li>Редизайн сайта echips.ru: UI-макеты главной страницы и страниц услуг. Работу передал, на основной сайт её пока не внесли.</li>
-            <li>Дизайн-макет портала с базой знаний для инженеров и каталогом программ.</li>
-          </ul>
+      </div>
+      <div class="exp">
+        <div class="exp__side"><span class="mono">[ 03 ] С ДЕКАБРЯ 2025 ПО СЕНТЯБРЬ 2026</span><span class="exp__badge">ECHIPS</span></div>
+        <div class="exp__main">
+          <h3>Echips, приложения и дизайн для сервисного центра</h3>
+          <div class="exp__cols">
+            <div>
+              <div class="mono">Приложения</div>
+              <ul>
+                <li>Установщики драйверов для каждой модели ноутбуков и моноблоков: запускаешь, жмёшь «Далее», остальное ставится само. Сделал целиком.</li>
+                <li>Общее приложение, которое само определяет модель и ставит нужный пакет драйверов.</li>
+                <li>Десктопное приложение для диагностики, сделал целиком: UI/UX дизайн, фронтенд и бэкенд. Автоматический прогон проверок, вход по пользователям, отчёты. Ей пользовались подключённые сервисные центры.</li>
+                <li>Веб-сервис приёма заявок: клиент сканирует QR при приёмке и заполняет форму, менеджеры меняют статусы в кабинете, а клиент сам видит статус ремонта.</li>
+              </ul>
+            </div>
+            <div>
+              <div class="mono">Дизайн</div>
+              <ul>
+                <li>UI/UX дизайн всех этих приложений и веб-сервиса заявок: экраны, состояния, адаптивные страницы.</li>
+                <li>Редизайн сайта echips.ru: UI-макеты главной страницы и страниц услуг. Работу передал, на основной сайт её пока не внесли.</li>
+                <li>Дизайн-макет портала с базой знаний для инженеров и каталогом программ.</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </li>
-      <li class="now">
-        <div class="when">сейчас</div>
-        <div><h3>Ищу работу и заказы</h3>
-          <p>UI/UX дизайн, веб-разработка, сайты под ключ.</p>
+      </div>
+      <div class="exp">
+        <div class="exp__side"><span class="mono">[ 04 ] СЕЙЧАС</span><span class="exp__badge exp__badge--accent">OPEN TO WORK</span></div>
+        <div class="exp__main">
+          <h3>Ищу работу и заказы</h3>
+          <p class="exp__sub" style="color: var(--text-2)">UI/UX дизайн, веб-разработка, сайты под ключ.</p>
         </div>
-      </li>
-    </ol>
-  </section>
-
-  <main id="works" class="works">
-    <h2 class="sec">Что я сделал для сервисного центра</h2>
-    <p class="sec-lead">Это рабочие инструменты Echips. Данные клиентов на скриншотах вымышленные.</p>
-
-    <article class="work">
-      <div>
-        <h3>Веб-сервис приёма заявок на ремонт</h3>
-        <p class="what">Клиент оставляет заявку онлайн, а потом сам смотрит, на каком этапе его устройство.</p>
-        <p>Адаптивная форма с валидацией полей, личный кабинет клиента, страница статуса по номеру заявки или телефону и админ-панель для сотрудников.</p>
-        <ul class="tags"><li>UI/UX дизайн</li><li>Фронтенд</li><li>Бэкенд</li><li>Хостинг и домен</li></ul>
       </div>
-      <div class="shots trio">
-        <div class="frame"><img src="img/zayavki-forma.webp" width="1360" height="860" loading="lazy" alt="Форма заявки на ремонт на сайте сервисного центра"></div>
-        <div class="frame"><img src="img/zayavki-status.webp" width="1360" height="860" loading="lazy" alt="Страница проверки статуса ремонта"></div>
-        <div class="frame"><img src="img/zayavki-kabinet.webp" width="1360" height="860" loading="lazy" alt="Личный кабинет клиента со списком заявок"></div>
-      </div>
-    </article>
-
-    <article class="work">
-      <div>
-        <h3>Десктопное приложение для диагностики ноутбуков</h3>
-        <p class="what">Инженер проходит проверки по сценарию, приложение собирает данные и формирует отчёт.</p>
-        <p>Приложение для Windows проверяет батарею, диск, клавиатуру, матрицу, тачпад и датчики, а также создаёт нагрузку, чтобы поймать перегрев. Результаты собираются в отчёт, который экспортируется в PDF, Excel или TXT. Я сделал приложение целиком: UI/UX дизайн, фронтенд и бэкенд.</p>
-        <ul class="tags"><li>UI/UX дизайн</li><li>Фронтенд</li><li>Бэкенд</li></ul>
-      </div>
-      <div class="shots pair">
-        <div class="frame"><img src="img/diagnostika-obzor.webp" width="1120" height="764" loading="lazy" alt="Главный экран программы диагностики"></div>
-        <div class="frame"><img src="img/diagnostika-otchet.webp" width="1120" height="764" loading="lazy" alt="Экран с деталями отчёта"></div>
-      </div>
-    </article>
-
-    <article class="work">
-      <div>
-        <h3>Приложение для установки драйверов</h3>
-        <p class="what">Приложение само определяет модель ноутбука и устанавливает нужные драйверы.</p>
-        <p>Раньше инженер искал драйверы вручную для каждой модели. Теперь это пошаговый сценарий: определение модели, подтверждение, загрузка и установка с индикацией прогресса. Я сделал приложение целиком: UI/UX дизайн, фронтенд и бэкенд.</p>
-        <ul class="tags"><li>UI/UX дизайн</li><li>Фронтенд</li><li>Бэкенд</li></ul>
-      </div>
-      <div class="shots pair">
-        <div class="frame"><img src="img/drivery-model.webp" width="900" height="560" loading="lazy" alt="Выбор модели ноутбука в установщике драйверов"></div>
-        <div class="frame"><img src="img/drivery-ustanovka.webp" width="900" height="560" loading="lazy" alt="Ход загрузки драйверов"></div>
-      </div>
-    </article>
-
-    <article class="work">
-      <div>
-        <h3>Новый дизайн сайта echips.ru</h3>
-        <p class="what">UI-макеты главной страницы и страниц услуг.</p>
-        <p>Я выполнил дизайн целиком и передал макеты. На основной сайт редизайн пока не перенесли, поэтому это показ макетов, а не живой сайт.</p>
-        <ul class="tags"><li>UI/UX дизайн</li><li>Вёрстка</li></ul>
-      </div>
-      <div class="shots pair">
-        <div class="frame"><img src="img/sait-glavnaya.webp" width="1400" height="875" loading="lazy" alt="Макет главной страницы сайта Echips"></div>
-        <div class="frame"><img src="img/sait-remont.webp" width="1400" height="875" loading="lazy" alt="Макет страницы услуги по ремонту"></div>
-      </div>
-    </article>
-
-    <article class="work">
-      <div>
-        <h3>Портал с базой знаний</h3>
-        <p class="what">Инструкции для инженеров и скачивание программ в одном месте.</p>
-        <p>Я нарисовал макет портала: вход, главная, статьи базы знаний и каталог программ. Идея в том, чтобы вопросы к поддержке решались поиском по базе знаний, а не звонком.</p>
-        <ul class="tags"><li>UI/UX дизайн</li><li>Вёрстка</li></ul>
-      </div>
-      <div class="shots pair">
-        <div class="frame"><img src="img/portal-glavnaya.webp" width="1400" height="875" loading="lazy" alt="Главная страница портала"></div>
-        <div class="frame"><img src="img/portal-baza.webp" width="1400" height="875" loading="lazy" alt="Раздел базы знаний"></div>
-      </div>
-    </article>
-
-    <h2 class="sec other">Сайты для других заказчиков</h2>
-    <p class="sec-lead">Живые сайты, их можно открыть.</p>
-
-    <article class="work">
-      <div>
-        <h3>Сервис «Микросервисы» для специалистов по закупкам</h3>
-        <p class="what">Инструменты специалиста по закупкам в одном кабинете: расчёты, документы, сроки и проверки.</p>
-        <p>Я делал UI/UX дизайн страниц всех микросервисов: калькуляторы, генерация штампа, проверка поставщика, чек-листы, волшебная таблица и шаблоны.</p>
-        <ul class="tags"><li>UI/UX дизайн</li></ul>
-      </div>
-      <div class="shots pair"><div class="frame"><img src="img/micro-kalkulyatory.webp" width="1400" height="900" loading="lazy" alt="Раздел калькуляторов в сервисе микросервисов"></div><div class="frame"><img src="img/micro-peni.webp" width="1400" height="900" loading="lazy" alt="Калькулятор пеней"></div></div>
-    </article>
-
-    <article class="work">
-      <div>
-        <h3>Электронная торговая площадка «Спецтендер»</h3>
-        <p class="what">Сайт площадки для закупок по 223-ФЗ, 44-ФЗ и коммерческих закупок.</p>
-        <p>Я делал UI/UX дизайн сайта. На скриншоте главная страница для заказчиков и участников торгов.</p>
-        <ul class="tags"><li>UI/UX дизайн</li></ul>
-      </div>
-      <div class="shots"><div class="frame"><img src="img/etp-glavnaya.webp" width="1400" height="630" loading="lazy" alt="Главная страница электронной торговой площадки Спецтендер"></div></div>
-    </article>
-
-    <article class="work">
-      <div>
-        <h3>Сайт стоматологии «Дент-АС»</h3>
-        <p class="what">Услуги и цены, запись на приём и контакты клиники.</p>
-        <p>Я делал UI/UX дизайн сайта частной стоматологии.</p>
-        <ul class="tags"><li>UI/UX дизайн</li></ul>
-      </div>
-      <div class="shots"><div class="frame"><img src="img/dent-glavnaya.webp" width="1400" height="875" loading="lazy" alt="Главная страница сайта стоматологии Дент-АС"></div></div>
-    </article>
-
-    <h2 class="sec other">Макеты в Figma</h2>
-    <p class="sec-lead">Дизайн-макеты в Figma, по которым сделаны сайты и приложения выше.</p>
-    <div class="figs">
-      <figure class="fig"><div class="frame"><img src="img/fig-etp-glavnyj.webp" width="1400" height="732" loading="lazy" alt="Макет главного экрана личного кабинета площадки"></div><figcaption>Спецтендер: главный экран личного кабинета</figcaption></figure>
-      <figure class="fig"><div class="frame"><img src="img/fig-etp-vhod.webp" width="900" height="633" loading="lazy" alt="Макет окна входа на площадку"></div><figcaption>Спецтендер: вход на портал</figcaption></figure>
-      <figure class="fig"><div class="frame"><img src="img/fig-micro-kalkulyatory.webp" width="1400" height="1138" loading="lazy" alt="Макет страницы с калькуляторами"></div><figcaption>Микросервисы: калькуляторы НДС, дат, пеней и сроков</figcaption></figure>
-      <figure class="fig"><div class="frame"><img src="img/fig-dent-glavnaya.webp" width="1320" height="874" loading="lazy" alt="Макет главной страницы стоматологии"></div><figcaption>Дент-АС: главная страница</figcaption></figure>
-      <figure class="fig"><div class="frame"><img src="img/fig-dent-uslugi.webp" width="1400" height="1069" loading="lazy" alt="Макет страницы услуг и цен"></div><figcaption>Дент-АС: услуги и цены</figcaption></figure>
     </div>
-  </main>
-</div>
-
-<section id="offer" class="offer">
-  <div class="wrap">
-    <h2 class="sec">Что могу сделать для вас</h2>
-    <p class="sec-lead">Работаю удалённо, показываю промежуточный результат, чтобы вы видели, что получается.</p>
-    <ul>
-      <li><b>Сайт под ключ</b><span>UI/UX дизайн, адаптивная вёрстка, фронтенд и бэкенд, хостинг и домен. Вы получаете работающий сайт по своему адресу.</span></li>
-      <li><b>UI/UX дизайн</b><span>Сайты и приложения для компьютера и телефона. Макеты в Figma, готовые к передаче в разработку.</span></li>
-      <li><b>Веб-разработка</b><span>Фронтенд и бэкенд сайтов и веб-сервисов: формы, личные кабинеты, админ-панели.</span></li>
-      <li><b>Десктопные приложения</b><span>Небольшие инструменты под вашу задачу, как диагностика и установка драйверов выше.</span></li>
-    </ul>
   </div>
 </section>
 
-<div class="wrap">
-  <section id="about" class="about">
-    <div class="story">
-      <h2 class="sec">Обо мне</h2>
-      <p class="intro">Меня зовут Максим, мне нравится делать так, чтобы сложным можно было пользоваться без инструкции. Занимаюсь UI/UX дизайном сайтов и приложений и довожу его до работающего продукта: вёрстка, фронтенд, бэкенд.</p>
-
-      <h3>Фриланс</h3>
-      <p>С января 2025 года делаю UI/UX дизайн сайтов и интерфейсов приложений для компьютеров и телефонов. Работаю удалённо. Если заказчику нужен готовый сайт, беру его целиком: дизайн, адаптивную вёрстку, фронтенд и бэкенд, хостинг и домен.</p>
-
-      <h3>СпецТендер</h3>
-      <p>С июня по ноябрь 2025 года работал веб-дизайнером электронной торговой площадки. Рисовал интерфейсы сайта, порталов и сервиса микросервисов в Figma, делал прототипы и адаптивные макеты, готовил баннеры и рекламную графику, передавал макеты разработчикам и следил за качеством вёрстки.</p>
-
-      <h3>Echips</h3>
-      <p>С декабря 2025 по сентябрь 2026 года делал для сервисного центра приложения и дизайн: программу диагностики, установщики драйверов и веб-сервис приёма заявок, а ещё редизайн сайта и дизайн-макет портала с базой знаний. Приложения я сделал целиком: дизайн, фронтенд и бэкенд. Редизайн сайта я передал, на основной сайт его пока не внесли.</p>
-    </div>
-
-    <aside class="side">
-      <dl class="facts">
-        <dt>Город</dt><dd>Челябинск, работаю удалённо</dd>
-        <dt>Дизайн</dt><dd>UI/UX дизайн сайтов и приложений, Figma</dd>
-        <dt>Код</dt><dd>Фронтенд и бэкенд: HTML и CSS, Python как основной язык</dd>
-        <dt>Немного</dt><dd>C++ и Rust</dd>
-        <dt>JavaScript</dt><dd>Знаю пока слабо</dd>
-        <dt>Опыт</dt><dd>С января 2025: фриланс, СпецТендер, Echips</dd>
-      </dl>
-    </aside>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="box">
-      <div>
-        <h2>Расскажите, что нужно сделать</h2>
-        <p>Для заказов и для вакансий пишите туда, где удобнее.</p>
+<!-- ОБО МНЕ -->
+<section id="about" class="section section--light about">
+  <div class="container">
+    <span class="tag">Обо мне</span>
+    <p class="about__lead">Меня зовут Максим, мне нравится делать так, чтобы сложным можно было пользоваться без инструкции. Занимаюсь UI/UX дизайном сайтов и приложений и довожу его до работающего продукта: вёрстка, фронтенд, бэкенд.</p>
+    <div class="grid-3">
+      <div class="about-card">
+        <div class="mono">[ Фриланс ]</div>
+        <p>С января 2025 года делаю UI/UX дизайн сайтов и интерфейсов приложений для компьютеров и телефонов. Работаю удалённо. Если заказчику нужен готовый сайт, беру его целиком: дизайн, адаптивную вёрстку, фронтенд и бэкенд, хостинг и домен.</p>
       </div>
-      <div class="links"><a class="mail" href="https://t.me/yanlax">Telegram @yanlax</a><a class="mail" href="https://chelyabinsk.hh.ru/resume/aba8cf85ff11348c450039ed1f4f65774e4d73">Резюме на hh.ru</a><a class="mail sub" href="mailto:nizamov22032@gmail.com">nizamov22032@gmail.com</a></div>
+      <div class="about-card">
+        <div class="mono">[ СпецТендер ]</div>
+        <p>С июня по ноябрь 2025 года работал веб-дизайнером электронной торговой площадки. Рисовал интерфейсы сайта, порталов и сервиса микросервисов в Figma, делал прототипы и адаптивные макеты, готовил баннеры и рекламную графику, передавал макеты разработчикам и следил за качеством вёрстки.</p>
+      </div>
+      <div class="about-card">
+        <div class="mono">[ Echips ]</div>
+        <p>С декабря 2025 по сентябрь 2026 года делал для сервисного центра приложения и дизайн: программу диагностики, установщики драйверов и веб-сервис приёма заявок, а ещё редизайн сайта и дизайн-макет портала с базой знаний. Приложения я сделал целиком: дизайн, фронтенд и бэкенд. Редизайн сайта я передал, на основной сайт его пока не внесли.</p>
+      </div>
     </div>
-  </section>
-  <footer>Максим Низамов, Челябинск</footer>
-</div>
+    <h3 class="skills-title">Навыки</h3>
+    <dl class="skills">
+      <div><dt>Город</dt><dd>Челябинск, работаю удалённо</dd></div>
+      <div><dt>Дизайн</dt><dd>UI/UX дизайн сайтов и приложений, Figma</dd></div>
+      <div><dt>Код</dt><dd>Фронтенд и бэкенд: HTML и CSS, Python как основной язык</dd></div>
+      <div><dt>Немного</dt><dd>C++ и Rust</dd></div>
+      <div><dt>JavaScript</dt><dd>Знаю пока слабо</dd></div>
+      <div><dt>Опыт</dt><dd>С января 2025: фриланс, СпецТендер, Echips</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section id="contact" class="contact">
+  <div class="container">
+    <span class="mono muted">[ Контакты ]</span>
+    <h2 class="h-xl">Расскажите, что нужно сделать</h2>
+    <p class="contact__sub">Для заказов и для вакансий пишите туда, где удобнее.</p>
+    <div class="grid-3">
+      <a href="https://t.me/yanlax" class="contact-card contact-card--accent" target="_blank" rel="noopener">
+        <span class="mono">Telegram ↗</span><span class="contact-card__value">@yanlax</span>
+      </a>
+      <a href="mailto:nizamov22032@gmail.com" class="contact-card contact-card--dark">
+        <span class="mono">Почта ↗</span><span class="contact-card__value">nizamov22032@gmail.com</span>
+      </a>
+      <a href="https://chelyabinsk.hh.ru/resume/aba8cf85ff11348c450039ed1f4f65774e4d73" class="contact-card contact-card--light" target="_blank" rel="noopener">
+        <span class="mono">Резюме ↗</span><span class="contact-card__value">hh.ru</span>
+      </a>
+    </div>
+    <footer class="footer mono">
+      <span>Максим Низамов, Челябинск</span>
+      <a href="#top">Наверх ↑</a>
+    </footer>
+  </div>
+</section>
+
+</main>
 <script>
 try{history.scrollRestoration="manual"}catch(e){}
-if(!location.hash){window.scrollTo(0,0);addEventListener("load",function(){window.scrollTo(0,0)})}
+if(!location.hash){scrollTo(0,0);addEventListener("load",function(){scrollTo(0,0)})}
 </script>
 </body>
 </html>
