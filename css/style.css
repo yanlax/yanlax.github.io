@@ -154,3 +154,5 @@ footer{padding:0 0 40px;color:var(--ink-2);font-size:14px}
 @media (max-width:860px){.collage{aspect-ratio:1/1.1}.about .side{position:static}}
 
 @media (max-width:640px){.path li{grid-template-columns:1fr;gap:6px}}
+
+html{overflow-anchor:none}
